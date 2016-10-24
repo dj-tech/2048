@@ -4,6 +4,17 @@
   <meta charset="utf-8">
   <title>2048</title>
 
+  <script>
+  var VirtualMachine = require('scratch-vm');
+  var vm = new VirtualMachine();
+
+  // Block events
+  workspace.addChangeListener(vm.blockListener);
+
+  // Run threads
+  vm.start();
+  <script>
+
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
